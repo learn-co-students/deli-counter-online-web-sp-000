@@ -12,3 +12,7 @@ def line (other_deli)
     puts "The line is currently: " + arr.rstrip
   end
 end
+
+def take_a_number (katz_deli, new_customer)
+  puts katz_deli << 
+end
