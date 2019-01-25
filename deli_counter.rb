@@ -2,10 +2,12 @@ def line(katz_deli)
   if katz_deli.length == 0 
     puts "The line is currently empty."
   else 
-    katz_deli.each do |person|
-      puts "The line is currently: "+"#{person.length}" + ". " + "#{person}"
+    new_array = []
+    katz_deli.each_with_index do |person, index|
+      new_array.push("#{index+1}. #{person}")
     end
   end
+  puts "The line is currently" + "#{new_array}"
 end
 
 def take_a_number(katz_deli, name)
