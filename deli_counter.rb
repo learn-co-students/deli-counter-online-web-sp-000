@@ -12,6 +12,10 @@ def line(katz_deli)
       positions.push("#{counter}. #{name}")
       counter += 1
     end
-    puts "The line is currently: #{}"
+    puts "The line is currently: #{positions.join(" ")}"
   end
+end
+
+def take_a_number(array, name)
+  
 end
