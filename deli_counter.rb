@@ -20,10 +20,7 @@ def now_serving(deli)
   if deli == []
     puts "There is nobody waiting to be served!"
   else
-    
-    #deli.each do |line| 
-      #new_array = deli.shift 
-    puts "Currently serving #{deli[]}."
-  # end 
+    puts "Currently serving #{deli[0]}."
+      deli.shift
   end 
 end 
