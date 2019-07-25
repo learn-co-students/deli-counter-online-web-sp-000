@@ -1,5 +1,5 @@
 # Write your code here.
-katz_deli = ["1. John", "2. Joe", "3. Rob"]
+katz_deli = []
 
 def line (katz_deli)
   if katz_deli.length == 0 
