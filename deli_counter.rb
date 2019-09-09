@@ -13,14 +13,10 @@ end
 end
 
 def take_a_number(katz_deli, name)
-  if katz_deli.length == 0  
     one_in_line = katz_deli << "#{name}"
-    puts "Welcome, #{name}. You are number 1 in line."
-  elsif katz_deli.length > 0
-    katz_deli << "#{name}"
     last_place = katz_deli.length
     puts "Welcome, #{name}. You are number #{last_place} in line."
-end
+
 end
 
 def now_serving(katz_deli)
