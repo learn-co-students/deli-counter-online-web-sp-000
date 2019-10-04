@@ -9,7 +9,7 @@ def line(katz_deli)
        in_line += " #{index +1}. #{name}"
       end
        puts "The line is currently:#{in_line}"
-     end
+  end
 end
 
 def take_a_number(katz_deli, name)
@@ -17,5 +17,10 @@ def take_a_number(katz_deli, name)
  more_in_line = "Welcome, #{name}. You are number #{katz_deli.length} in line."
  puts "#{more_in_line}"
  end
-#   more_in_line_2 = "#{more_in_line} += "
-# more_in_line += " Welcome, #{name}. You are number #{index + 1} in line."
+def now_serving(katz_deli)
+    if katz_deli.empty?
+    puts "There is nobody waiting to be served!"
+  else puts "Currently serving #{katz_deli[0]}."
+  katz_deli.shift
+  end
+end
