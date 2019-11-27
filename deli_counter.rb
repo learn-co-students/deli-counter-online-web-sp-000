@@ -24,8 +24,8 @@ def now_serving(line)
   end 
   
   if !line.empty?
-    puts "Currently serving #{line[0]}."
-    line.shift
+    puts "Currently serving #{line.shift}."
+    
   end 
 end 
 
