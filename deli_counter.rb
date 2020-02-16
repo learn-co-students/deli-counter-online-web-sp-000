@@ -2,7 +2,7 @@
 require "pry"
 
 def line(deli)
-  if deli.size == 0
+  if deli.empty?
     puts "The line is currently empty."
   elsif deli.size > 0
     new_arr =[]
@@ -18,7 +18,7 @@ def take_a_number(deli, name)
 end
 
 def now_serving(deli)
-  if deli.size == 0
+  if deli.empty?
     puts "There is nobody waiting to be served!"
   else
     current_customer = deli.shift
