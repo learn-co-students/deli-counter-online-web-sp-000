@@ -11,8 +11,14 @@ def line(katz_deli)
   end
 end
 
-def take_a_number(katz_deli)
-  if katz_deli == []
-    then 
-  end
+def take_a_number(katz_deli,name)
+  ## the array for the current line of people (katz_deli)
+  ## a string containing the name of the person joining the end of the line
+  ## call out (puts) the person's name along with their position in line
+  ## Welcome, Ada. You are number 1 in line.
+  
+  katz_deli << name
+  puts 
 end
+
+
