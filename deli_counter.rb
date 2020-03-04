@@ -12,15 +12,15 @@ def line(katz_deli)
 end
 
 def take_a_number(katz_deli,name)
-  if katz_deli == []
-   katz_deli << #{name}
-  else
-    string = "The line is currently:"
-    katz_deli.each_with_index.map do |name, x|
-    wait_number = x + 1
-    string << " #{wait_number}. #{name}"
-  end
-    puts string
-  end
+      katz_deli << name
+    puts "Welcome, #{name}. You are number #{katz_deli.length} in line."
 end
 
+def now_serving(katz_deli)
+  if katz_deli = []
+    puts "There is nobody waiting to be served!"
+  else
+    name = katz_deli.shift
+
+  end
+end
