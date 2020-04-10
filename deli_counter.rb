@@ -20,9 +20,5 @@ def take_a_number(line, custy)
 end
 
 def now_serving(line)
-    if line.empty?
-        puts "There is nobody waiting to be served!"
-    else
-        puts "Currently serving #{line.shift()}."
-    end
+    line.length == 0 ? (puts "There is nobody waiting to be served!") : (puts "Currently serving #{line.shift()}.")
 end
