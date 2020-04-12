@@ -21,6 +21,8 @@ def take_a_number(katz_deli, new_customer)
 katz_deli<<(new_customer)
   puts "Welcome, #{new_customer}. You are number #{katz_deli.length} in line."
 end
+#adds a new customer to the line, a.k.a. the katz deli array
+#using string interpolation, puts "Welcome (argument_2), you are (the size of the array) in line"
 
 def now_serving(katz_deli)
 if katz_deli.length < 1
@@ -30,3 +32,7 @@ else
   katz_deli.shift
   end
 end
+
+#checks to see if anyone is in line
+#if not, puts a message that says so
+#if someone is in line, puts a message saying, "now serving (the first element in the katz_deli array)"
