@@ -1,5 +1,5 @@
+#1 
 katz_deli = []
-
 def line(katz_deli)
   line_positions = [];
   if katz_deli.empty?
@@ -14,11 +14,13 @@ def line(katz_deli)
   end
 end
 
+#2
 def take_a_number(katz_deli, name)
   katz_deli << name
   puts "Welcome, #{name}. You are number #{katz_deli.size} in line."
 end
 
+#3
 def now_serving(katz_deli)
   if katz_deli.empty?
     puts "There is nobody waiting to be served!"
