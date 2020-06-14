@@ -1,0 +1,4 @@
+require relative './deli_counter.rb'
+
+deli = ["bob", "Louie", "Mooshpoosh", "AshtonKutcher"]
+line(deli)
