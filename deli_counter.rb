@@ -1,8 +1,7 @@
 katz_deli = []
 
 def line(length_of_line)
-  
-  if length_of_line.size == 0
+   if length_of_line.size == 0
     puts "The line is currently empty."
   else
     message = "The line is currently: "
@@ -14,6 +13,15 @@ def line(length_of_line)
 end
 
 def take_a_number(length_of_line, name)
-  length_of_line << name
+  length_of_line << name 
   puts "Welcome, #{name}. You are number #{length_of_line.size} in line."
+end
+
+def now_serving(length_of_line)
+    if length_of_line.size == 0
+     puts "There is nobody waiting to be served!"
+    else
+    name = length_of_line.shift
+    puts "Currently serving #{name}."
+  end
 end
