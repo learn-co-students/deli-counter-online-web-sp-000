@@ -1,27 +1,26 @@
 
 katz_deli = []
 
-def take_a_number(katz_deli)
-  puts "Welcome to Katz's Deli.  What is your name?"
-  gets name 
-  katz_deli[] << name 
-  placement = katz_deli.find.index("name") + 1
-  puts "Welcome, #{name}.  You are number #{placement} in line."
+def take_a_number(katz_deli, name)
+    katz_deli.push(name) 
+    placement = katz_deli.index(name) + 1
+    puts "Welcome, #{name}. You are number #{placement} in line."
 end
 
 def line(katz_deli)
-  index = 0
-  while index < katz_deli.length 
-    name = katz_deli[index]
-    puts "The line is currently: #{index + 1}. #{name} "
-    index += 1 
-  end
-    puts "The line is currently empty."
+  if katz_deli.empty?
+    puts "The line is currently empty." 
+  else
+   puts "The line is currently: 1. #{katz_deli[0]} 2. #{katz_deli[1]} 3. #{katz_deli[2]}"
+ end
 end
 
 def now_serving(katz_deli)
-  serving = katz_deli.shift
-  while katz_deli.any?
+  if katz_deli.empty?
+    puts "There is nobody waiting to be served!"
+  else
+    serving = katz_deli[0]
     puts "Currently serving: #{serving}."
+    katz_deli.shift
   end
 end
