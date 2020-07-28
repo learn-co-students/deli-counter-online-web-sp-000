@@ -11,8 +11,12 @@ def line(katz_deli)
   if katz_deli.empty?
     puts "The line is currently empty." 
   else
-   puts "The line is currently: 1. #{katz_deli[0]} 2. #{katz_deli[1]} 3. #{katz_deli[2]}"
- end
+    place = 1 
+    katz_deli.each do |n| 
+      puts "The line is currently: #{place}. #{n} "
+      place = place + 1 
+    end
+  end
 end
 
 def now_serving(katz_deli)
@@ -20,7 +24,7 @@ def now_serving(katz_deli)
     puts "There is nobody waiting to be served!"
   else
     serving = katz_deli[0]
-    puts "Currently serving: #{serving}."
+    puts "Currently serving #{serving}."
     katz_deli.shift
   end
 end
