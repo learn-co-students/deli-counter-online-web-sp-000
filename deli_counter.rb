@@ -4,12 +4,17 @@ def line(queue)
     if queue = []
         message = "The line is currently empty."
     else
+        #=> "The line is currently: 1. Ada 2. Grace 3. Kent"
+        message = "The line is currently: "
+        queue.each_with_index do |name, index|
 
+        end
     end
 end
 
 def take_a_number(queue, name)
     # The method should call out (`puts`) the person's name along with their position in line.
+    puts "Welcome, #{name}. You are number #{name.find_index + 1} in line."
     
 end
 
