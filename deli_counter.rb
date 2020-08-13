@@ -5,11 +5,12 @@ def line(queue)
         message = "The line is currently empty."
     else
         #=> "The line is currently: 1. Ada 2. Grace 3. Kent"
-        message = "The line is currently: "
+        message = "The line is currently:"
         queue.each_with_index do |name, index|
-
+            message = message + " #{index + 1}. #{name}"
         end
     end
+    puts message
 end
 
 def take_a_number(queue, name)
@@ -18,8 +19,14 @@ def take_a_number(queue, name)
     
 end
 
-def now_serving()
-
+def now_serving(queue)
+#=> "Currently serving Ada."
+    if queue != []
+        puts "Currently serving #{queue.first}"
+        queue.shift
+    else
+        puts "There is nobody waiting to be served!"
+    end
 end
 
 # Build the `now_serving` method which should call out (i.e. `puts`) the next person in line and then remove them from the front. If there is nobody in line, it should call out (`puts`) that `"There is nobody waiting to be served!"`.
