@@ -1,0 +1,8 @@
+require 'pry'
+require_relative "./deli_counter.rb"
+
+# katz_deli = []
+katz_deli = ["Logan", "Avi", "Spencer"]
+
+# line(katz_deli)
+line(["Logan", "Avi", "Spencer"])
