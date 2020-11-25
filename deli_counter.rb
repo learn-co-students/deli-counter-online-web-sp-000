@@ -2,8 +2,10 @@
   if deli.size == 0 
     puts "The line is currently empty."
   else
+     string = "The line is currently:"
      deli.map.with_index(1) do |names, index| 
-        puts "The line is currently: #{index}.#{names}"
-     end 
+       string += " #{index}.#{names}"
+        end 
+       puts string 
      end
 end 
