@@ -11,3 +11,4 @@ def line(deli)
     puts "The line is currently: #{index}.#{names}"
   end
 end 
+end 
