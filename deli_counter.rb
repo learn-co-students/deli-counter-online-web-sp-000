@@ -3,11 +3,9 @@ def line(deli)
     puts "The line is currently empty."
   end 
   if deli == other_deli
-  deli.map.with_index(1){|names,index| "#{index}.#{names}"}. 
-    puts "The line is currently: #{index}.#{names}"
+  deli.map.with_index(1){|names, index| "#{index}.#{names}" puts "The line is currently: #{index}.#{names}"}
      end 
   if deli == another_deli
-    deli.map.with_index(1){|names,index| "#{index}.#{names}"}. 
-    puts "The line is currently: #{index}.#{names}"
+    deli.map.with_index(1){|names, index| "#{index}.#{names}" puts "The line is currently: #{index}.#{names}"}
     end  
-  end 
+  end  
