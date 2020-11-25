@@ -7,4 +7,5 @@ def line(deli)
      end 
   if deli == another_deli
     deli.map.with_index(1){|names, index| "#{index}.#{names}" puts "The line is currently: #{index}.#{names}"
-  end  
+  end
+end 
