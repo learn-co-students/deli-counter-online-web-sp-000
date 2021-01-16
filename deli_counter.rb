@@ -1,36 +1,26 @@
-# Write your code here.
+require 'pry'
 
 def line(array)
-  if array.size == 0
-    puts "The line is currently empty."
-  else
-    counter = 0
-    new = []
-    array.each do |x|
-      counter += 1
-      new << "#{counter}. #{x}"
-    end
-    puts "The line is currently: #{new.join(" ")}"
-end
-end
-
-def take_a_number(deli, name)
-  new = []
-  if deli.length < 1
-    deli << name
-    puts "Welcome, #{name}. You are number 1 in line."
-  else
-    x = deli.length + 1
-    deli << name
-    puts "Welcome, #{name}. You are number #{x} in line."
+  new_array = array.map.with_index(1) do |name, index|
+      "#{index}. #{name}"
   end
+
+if array.length > 0
+  puts "The line is currently: #{new_array.join(" ")}"
+else
+  puts "The line is currently empty."
+end
 end
 
-def now_serving(deli)
-  if deli.length < 1
+def take_a_number(array, name)
+  array << name
+  puts "Welcome, #{name}. You are number #{array.length} in line."
+end
+
+def now_serving(array)
+  if array.length > 0
+    puts "Currently serving #{array.shift}."
+  else
     puts "There is nobody waiting to be served!"
-  else
-    puts "Currently serving #{deli[0]}."
-    deli.shift
-  end
+end
 end
