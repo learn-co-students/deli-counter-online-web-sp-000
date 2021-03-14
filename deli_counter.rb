@@ -1,13 +1,13 @@
 require 'pry'
 
 def line(new_guest) 
-  if new_guest_array == []
+  if katz_deli == [] 
     puts "The line is currently empty."
   else
     new_guest.each do |name, index|
-      new_guest_array.push ("#{index}. #{name} ")
+      katz_deli.push ("#{index}. #{name}")
     end
-      puts "The line is currently: #{new_guest_array.join(" ")}."
+      puts "The line is currently: #{katz_deli.join(" ")}."
   end
 end
 
