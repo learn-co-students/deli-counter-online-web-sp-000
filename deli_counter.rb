@@ -1,10 +1,11 @@
+require 'pry'
 
-
-def line(katz_deli) 
-  if katz_deli = []
+def line(guest) 
+  if deli_array = []
     puts "The line is currently empty."
   else
-    puts "The line is currently #{other_deli}."
+    deli_array.length > 1 
+      puts "The line is currently #{katz_deli}."
   end
 end
 
