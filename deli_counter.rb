@@ -4,8 +4,10 @@ def line(guest)
   if deli_array = []
     puts "The line is currently empty."
   else
-    deli_array.length > 1 
-      puts "The line is currently #{katz_deli}."
+    guest.each.with_index(1) do |name, index|
+      deli_array << ("#{index}. #{name}.")
+    end
+      puts "The line is currently: #{deli_array.join(" ")}."
   end
 end
 
