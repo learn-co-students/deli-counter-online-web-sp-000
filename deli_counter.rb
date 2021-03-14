@@ -1,14 +1,13 @@
 require 'pry'
 
-def line(guest) 
-  deli_array = []
-  if deli_array.length == 0
+def line(new_guest) 
+  if new_guest_array.length = []
     puts "The line is currently empty."
   else
-    guest.each do |name, index|
-      deli_array.push ("#{index}. #{name}.")
+    new_guest.each.with_index(1) do |name, index|
+      new_guest_array << "#{index}. #{name} "
     end
-      puts "The line is currently: #{deli_array.join(" ")}."
+      puts "The line is currently: #{new_guest_array.join(" ")}."
   end
 end
 
