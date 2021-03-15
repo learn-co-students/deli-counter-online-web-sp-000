@@ -1,20 +1,21 @@
 require 'pry'
 
-def line(new_guest) 
-  if katz_deli == [] 
+def line(array) 
+  line_length = array.length 
+  if line_length == 0
     puts "The line is currently empty."
   else
-    new_guest.each do |name, index|
-      katz_deli.push ("#{index}. #{name}")
+    line_order = "The line is currently:"
+      array.each_with_index do |name, i|
+        line_order = line_order + " #{i+1}. " + name
     end
-      puts "The line is currently: #{katz_deli.join(" ")}."
-  end
+      puts line_order
+    end
 end
 
-
-
 def take_a_number(katz_deli, name)
-  
+  katz_deli.push(name)
+    puts "Welcome, #{name}. You are number #{katz_deli.length+1} in line."
 end
 
 
