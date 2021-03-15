@@ -14,12 +14,20 @@ def line(array)
 end
 
 def take_a_number(katz_deli, name)
-  katz_deli.push(name)
-    puts "Welcome, #{name}. You are number #{katz_deli.length+1} in line."
+  katz_deli << name
+    puts "Welcome, #{name}. You are number #{katz_deli.length} in line."
 end
 
 
 
-def now_serving
-
+def now_serving(guest)
+  if guest.length == 0 
+    puts "There is nobody waiting to be served!"
+  else
+    guest.shift
+      puts "Currently serving #{guest}."
+  end
 end
+
+
+
