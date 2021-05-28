@@ -37,8 +37,7 @@ def now_serving(queue_array)
   if queue_array == []
     puts "There is nobody waiting to be served!"
   else
-    puts "#{queue_array.shift}"
-    p queue_array
+    puts "Currently serving #{queue_array.shift}."
   end
 end
 
