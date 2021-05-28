@@ -1,7 +1,5 @@
 # Write your code here.
 
-# = ["Amanda", "Annette", "Ruchi", "Jason", "Logan", "Spencer", "Avi", "Joe", "Rachel", "Lindsey"]
-
 def line(queue_array)
   if queue_array == []
     puts "The line is currently empty."
@@ -13,17 +11,6 @@ def line(queue_array)
 end
 
 
-
-#line(katz_deli)
-
-
-
-
-
-
-#queue_array = ["a"]
-#name = "ada"
-
 def take_a_numberz(queue_array, customer_name)
   queue_array.push(customer_name)
   line = "Welcome, #{customer_name}. You are number" 
@@ -34,7 +21,7 @@ end
 
 def take_a_numberz(queue_array, customer_name)
   queue_array.push(customer_name)
-  line = "Welcome, #{customer_name}. You are number" 
+  line = "Welcome, #{customer_name}. You are number" {
   position = queue_array.index(customer_name)
   end_of_line = "in line."
   puts "#{line} #{position + 1} #{end_of_line}"
@@ -42,7 +29,6 @@ end
 
 
 
-#take_a_number(queue_array, name)
 
 
 
