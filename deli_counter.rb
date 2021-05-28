@@ -6,12 +6,8 @@ def line(queue_array)
   if queue_array == []
     puts "The line is currently empty."
   else
-    puts "The line is currently: "
-<<<<<<< HEAD
+    opening_line =  "The line is currently: "
     queue_array.each_index { |index| print "#{index + 1}. #{queue_array[index]}. " }
-=======
-    queue_array.each_index { |index| print "#{index + 1}. #{queue_array[index]}. " }.to_s
->>>>>>> b5aa53e0716d488da0be54b7d4829c102fb4ca41
   end
 end
 
