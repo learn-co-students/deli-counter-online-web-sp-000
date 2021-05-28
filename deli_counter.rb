@@ -12,6 +12,8 @@ def line(queue_array)
 end
 
 
+
+
 #take_a_number method - if someone joins the queue (array) then call out their name and position in the queue.
 def take_a_number(queue_array, customer_name)
   queue_array.push(customer_name)
@@ -27,6 +29,8 @@ def take_a_number(queue_array, customer_name)
   queue_position = queue_array.index(customer_name)
   puts "Welcome, #{customer_name}. You are number #{queue_position + 1} in line."
 end
+
+
 
 
 #now_serving method calls out the next person to be served and remove them from the queue (array).
