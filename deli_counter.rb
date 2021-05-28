@@ -1,5 +1,6 @@
 # Write your code here.
 
+#line method to show everyone (in an array) their current place in the queue.
 def line(queue_array)
   if queue_array == []
     puts "The line is currently empty."
@@ -11,8 +12,7 @@ def line(queue_array)
 end
 
 
-
-
+#take_a_number method - if someone joins the queue (array) then call out their name and position in the queue.
 def take_a_number(queue_array, customer_name)
   queue_array.push(customer_name)
   line = "Welcome, #{customer_name}. You are number" 
@@ -21,7 +21,7 @@ def take_a_number(queue_array, customer_name)
   puts "#{line} #{position + 1} #{end_of_line}"
 end
 
-#Refactored #take_a_number method
+#Refactored #take_a_number method to reduce code & increase readability.
 def take_a_number(queue_array, customer_name)
   queue_array.push(customer_name)
   queue_position = queue_array.index(customer_name)
@@ -29,10 +29,7 @@ def take_a_number(queue_array, customer_name)
 end
 
 
-
-array = ["Logan", "Avi", "Spencer"]
-
-
+#now_serving method calls out the next person to be served and remove them from the queue (array).
 def now_serving(queue_array)
   if queue_array == []
     puts "There is nobody waiting to be served!"
@@ -40,11 +37,3 @@ def now_serving(queue_array)
     puts "Currently serving #{queue_array.shift}."
   end
 end
-
-now_serving(array)
-
-#puts out next person in line and then remove them from the front of the 'queue_array'
-#if no one in 'queue_array'. Puts that "There is nobody waiting to be served!"
-
-
-
